@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Event Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Event Dashboard</h1>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="card">
+        <h2>Add New Event</h2>
+
+        <label>Event Title:</label>
+        <input type="text" id="title" placeholder="Enter the Event Title">
+
+        <label>Event Date:</label>
+        <input type="date" id="date">
+
+        <label>Event Category:</label>
+        <select id="category">
+            <option value="">Select</option>
+            <option>Work</option>
+            <option>Personal</option>
+            <option>Study</option>
+            <option>Miscellaneous</option>
+        </select>
+
+        <label>Event Description:</label>
+        <textarea id="description" rows="3" placeholder="Enter Event Description"></textarea>
+
+        <button class="primary-btn" id="addBtn">Add Event</button>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="card">
+        <h2 class="center">Events</h2>
+
+        <div class="top-buttons">
+            <button class="clear-btn" id="clearBtn">Clear All Events</button>
+            <button class="sample-btn" id="sampleBtn">Add Sample Event</button>
+        </div>
+
+        <div id="eventList"></div>
+    </div>
+
+</div>
+
+<!-- JS File -->
+<script src="script.js"></script>
+
+</body>
+</html>
